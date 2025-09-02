@@ -39,7 +39,7 @@ nav a:hover { color: #ff0080; }
 
 /* Hero */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://placehold.co/1920x1080/000000/ffffff?text=DJ+MISS+JAVI") center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/dj-bg.jpg") center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
