@@ -4,61 +4,92 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #fff;
   color: #111;
-  text-align: center;
+  line-height: 1.6;
 }
 
-/* Header */
-.site-header {
-  padding: 2rem 1rem;
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  z-index: 100;
   border-bottom: 1px solid #eee;
 }
-.logo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 5px;
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-align: center;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+nav a:hover { color: #ff0080; }
 
 /* Hero */
 .hero {
-  padding: 4rem 1rem;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://placehold.co/1920x1080/000000/ffffff?text=DJ+MISS+JAVI") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
-.hero h2 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.hero p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 3rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-}
-.card {
-  text-decoration: none;
-  color: #111;
-  border: 1px solid #ccc;
-  padding: 2rem;
-  font-weight: 500;
-  font-size: 1.2rem;
-  transition: all 0.2s ease;
-}
-.card:hover {
-  background: #111;
+.hero h1 { font-size: 4rem; font-weight: 900; letter-spacing: 5px; }
+.hero p { margin-top: 10px; font-size: 1.2rem; font-weight: 300; }
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border: 2px solid #fff;
   color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
+.btn:hover { background: #fff; color: #111; }
+.btn-primary { background: #111; border-color: #111; }
+.btn-primary:hover { background: #ff0080; color: #fff; }
+
+/* Sections */
+section { padding: 5rem 2rem; max-width: 1100px; margin: auto; text-align: center; }
+section h2 { font-size: 2rem; margin-bottom: 2rem; }
+
+/* Music Links */
+.music-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.music-link {
+  display: block;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  color: #111;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.music-link:hover { background: #f9f9f9; transform: translateY(-5px); }
+
+/* Shop */
+.shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.product { border: 1px solid #eee; }
+.product img { width: 100%; height: 250px; object-fit: cover; }
+.product-info { padding: 1rem; }
+.price { font-weight: bold; margin: 10px 0; }
+.buy-btn { background: #111; color: #fff; border: none; padding: 10px 20px; cursor: pointer; width: 100%; }
+.buy-btn:hover { background: #ff0080; }
+
+/* Gigs */
+.gigs-list { max-width: 600px; margin: auto; }
+.gig { border-bottom: 1px solid #eee; padding: 1rem 0; }
 
 /* Footer */
-footer {
-  padding: 2rem;
-  border-top: 1px solid #eee;
-  font-size: 0.9rem;
-  color: #555;
-}
+footer { background: #f9f9f9; padding: 2rem; font-size: 0.9rem; color: #666; margin-top: 2rem; }
