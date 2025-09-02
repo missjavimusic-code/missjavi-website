@@ -18,10 +18,8 @@ nav {
   z-index: 100;
   border-bottom: 1px solid #eee;
 }
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: 900;
-  text-align: center;
+.nav-logo {
+  height: 50px;  /* puedes hacerlo más grande si quieres */
 }
 nav ul {
   list-style: none;
@@ -40,18 +38,17 @@ nav a:hover { color: #ff0080; }
 /* Hero */
 .hero {
   background: url("images/hero-bg.jpg") center/cover no-repeat;
-  width: 100%;     /* que ocupe todo el ancho */
-  height: 100vh;   /* que ocupe toda la altura */
+  width: 100%;
+  height: 100vh;   /* ocupa toda la pantalla al inicio */
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   overflow: hidden;
 }
 
 .hero-logo {
-  max-width: 90%;   /* se adapta al ancho de la pantalla */
-  max-height: 90vh; /* el logo casi del porte completo de la pantalla */
+  max-width: 90vw;   /* hasta el 90% del ancho de la pantalla */
+  max-height: 90vh;  /* hasta el 90% de la altura visible */
   object-fit: contain;
 }
 .hero h1 { font-size: 4rem; font-weight: 900; letter-spacing: 5px; }
