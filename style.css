@@ -39,14 +39,19 @@ nav a:hover { color: #ff0080; }
 
 /* Hero */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/dj-bg.jpg") center/cover no-repeat;
-}
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/hero-bg.jpg") center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  position: relative;
+}
+
+.hero-logo {
+  width: 250px; /* ajusta según tu logo real */
+  margin-bottom: 20px;
 }
 .hero h1 { font-size: 4rem; font-weight: 900; letter-spacing: 5px; }
 .hero p { margin-top: 10px; font-size: 1.2rem; font-weight: 300; }
